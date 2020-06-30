@@ -16,12 +16,13 @@ import net.minecraftforge.fml.relauncher.Side;
 public class ModelRegistrationHandler {
     @SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
-        registerModel(ModItems.TOOL_SURIVIVAL_AXE, 0);
+        registerModel(ModItems.TOOL_SURVIVAL_AXE, 0);
     }
 
     private static void registerModel(Item item, int meta) {
         aa11lo.survivalgeartools.survivalgeartools.LOGGER.info("loading model from " + item.getRegistryName());
-		ModelLoader.setCustomModelResourceLocation(item, meta, 
+        
+        ModelLoader.setCustomModelResourceLocation(item, meta, 
 				new ModelResourceLocation(item.getRegistryName(), "inventory"));
 	}
 }

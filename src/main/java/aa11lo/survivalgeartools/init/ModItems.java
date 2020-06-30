@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 @ObjectHolder(survivalgeartools.MODID)
 public class ModItems {
    //TOOLS
-    public static final Item TOOL_SURIVIVAL_AXE = null;
+    public static final Item TOOL_SURVIVAL_AXE = null;
 
 
     @EventBusSubscriber(modid = survivalgeartools.MODID)
