@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 @ObjectHolder(survivalgeartools.MODID)
 public class ModItems {
    //TOOLS
-    public static final Item SURIVIVAL_AXE = null;
+    public static final Item TOOL_SURIVIVAL_AXE = null;
 
 
     @EventBusSubscriber(modid = survivalgeartools.MODID)
@@ -20,7 +20,7 @@ public class ModItems {
         @SubscribeEvent
         public static void registerItems(Register<Item> event){
             final Item[] items ={
-                new ItemSurvivalToolsAxe(SurvivalGearToolsMaterials.SURVIVAL_TOOL, 2.5f, 7.0f, "survivalaxe", "survival_axe")
+                new ItemSurvivalToolsAxe(SurvivalGearToolsMaterials.SURVIVAL_TOOL, 2.5f, 7.0f, "tool_survival_axe", "tool_survival_axe")
             };
             
             survivalgeartools.LOGGER.info("Begining Item Register");

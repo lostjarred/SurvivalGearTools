@@ -1,9 +1,5 @@
 # Items
-item.survialgeararmor.item_crafting_cloth.name=Cloth
-item.survialgeararmor.helmentbasic.name=Survival Armor Helment
-item.survialgeararmor.chestplatebasic.name=Survival Armor Chestplate
-item.survialgeararmor.leggingsbasic.name=Survival Armor Leggings
-item.survialgeararmor.bootsbasic.name=Survival Armor Boots
+item.survialgeararmor.tool_survival_axe.name=Survival Axe
 
 #Creative tab
-itemGroup.survialgeararmor=Survival Gear Armor
+itemGroup.survialtoolsarmor=Survival Gear Tools
