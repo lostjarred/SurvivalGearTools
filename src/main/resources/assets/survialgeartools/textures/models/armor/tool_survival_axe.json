@@ -1,6 +1,0 @@
-{
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "survivalgeartools:items/tool_survival_axe"
-	}
-}
