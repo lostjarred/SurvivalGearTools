@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = survivalgeartools.MODID, name = survivalgeartools.NAME, version = survivalgeartools.VERSION, acceptedMinecraftVersions = survivalgeartools.MC_VERSION)
 public class survivalgeartools {
 
-	public static final String MODID = "survialgeartools";
+	public static final String MODID = "survivalgeartools";
 	public static final String NAME = "Survival Gear Tools Mod";
 	public static final String VERSION = "0.1.0beta";
 	public static final String MC_VERSION = "[1.12.2]";
