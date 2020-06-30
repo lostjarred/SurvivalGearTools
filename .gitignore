@@ -29,3 +29,6 @@ crash-reports/
 
 #gimp
 *.xcf
+
+#textures
+textures/
