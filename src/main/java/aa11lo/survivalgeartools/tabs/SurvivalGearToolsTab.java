@@ -17,6 +17,6 @@ public class SurvivalGearToolsTab extends CreativeTabs {
     @SideOnly(Side.CLIENT)
     @Override
     public ItemStack createIcon(){
-        return new ItemStack(ModItems.ITEM_CRAFTING_CLOTH);
+        return new ItemStack(ModItems.SURIVIVAL_AXE);
     }
 }

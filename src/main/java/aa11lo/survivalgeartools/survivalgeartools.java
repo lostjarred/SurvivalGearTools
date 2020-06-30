@@ -23,7 +23,7 @@ public class survivalgeartools {
 
 	public static final Logger LOGGER = LogManager.getLogger(survivalgeartools.MODID);
 
-	public static final CreativeTabs SurvivalGearArmorTab = new SurvivalGearToolsTab();
+	public static final CreativeTabs SurvivalGearToolsCreativeTab = new SurvivalGearToolsTab();
 
 	@EventHandler
 	public void preInit(final FMLPreInitializationEvent event) {

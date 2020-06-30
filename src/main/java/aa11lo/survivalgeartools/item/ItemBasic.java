@@ -7,6 +7,6 @@ public class ItemBasic extends Item{
     public ItemBasic(String unlocalisedName, String registryName){
         setTranslationKey(survivalgeartools.MODID + "." + unlocalisedName);
         setRegistryName(registryName);
-        setCreativeTab(survivalgeartools.SurvivalGearArmorTab);
+        setCreativeTab(survivalgeartools.SurvivalGearToolsCreativeTab);
     }
 }
