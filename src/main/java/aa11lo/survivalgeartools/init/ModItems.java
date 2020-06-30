@@ -12,16 +12,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 
 @ObjectHolder(survivalgeartools.MODID)
 public class ModItems {
-
-    //ITEMS
-    public static final Item ITEM_CRAFTING_CLOTH = null;
-
-    //ARMOR
-    public static final Item ARMOR_BASIC_HELMENT = null;
-    public static final Item ARMOR_BASIC_CHESTPLATE = null;
-    public static final Item ARMOR_BASIC_LEGGINGS = null;
-    public static final Item ARMOR_BASIC_BOOTS = null;
-    
+   
     @EventBusSubscriber(modid = survivalgeartools.MODID)
     public static class RegistrationHandler{
         @SubscribeEvent
