@@ -3,6 +3,7 @@ package aa11lo.survivalgeartools.init;
 import aa11lo.survivalgeartools.survivalgeartools;
 import aa11lo.survivalgeartools.item.ItemSurvivalToolsAxe;
 import aa11lo.survivalgeartools.item.ItemSurvivalToolsKnife;
+import aa11lo.survivalgeartools.item.ItemSurvivalToolsShovel;
 import aa11lo.survivalgeartools.material.SurvivalGearToolsMaterials;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent.Register;
@@ -16,6 +17,7 @@ public class ModItems {
     //TOOLS
     public static final Item TOOL_SURVIVAL_AXE = null;
     public static final Item TOOL_SURVIVAL_KNIFE = null;
+    public static final Item TOOL_SURVIVAL_SHOVEL = null;
 
 
     @EventBusSubscriber(modid = survivalgeartools.MODID)
@@ -24,7 +26,8 @@ public class ModItems {
         public static void registerItems(Register<Item> event){
             final Item[] items ={
                 new ItemSurvivalToolsAxe(SurvivalGearToolsMaterials.SURVIVAL_TOOL, "tool_survival_axe"),
-                new ItemSurvivalToolsKnife(SurvivalGearToolsMaterials.SURVIVAL_TOOL, "tool_survival_knife")
+                new ItemSurvivalToolsKnife(SurvivalGearToolsMaterials.SURVIVAL_TOOL, "tool_survival_knife"),
+                new ItemSurvivalToolsShovel(SurvivalGearToolsMaterials.SURVIVAL_TOOL, "tool_survival_shovel"),
             };
             
             survivalgeartools.LOGGER.info("Begining Item Register");

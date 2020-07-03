@@ -18,6 +18,7 @@ public class ModelRegistrationHandler {
 	public static void registerModels(ModelRegistryEvent event) {
         registerModel(ModItems.TOOL_SURVIVAL_AXE, 0);
         registerModel(ModItems.TOOL_SURVIVAL_KNIFE, 0);
+        registerModel(ModItems.TOOL_SURVIVAL_SHOVEL, 0);
     }
 
     private static void registerModel(Item item, int meta) {
