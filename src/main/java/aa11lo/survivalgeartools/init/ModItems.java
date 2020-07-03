@@ -20,7 +20,7 @@ public class ModItems {
         @SubscribeEvent
         public static void registerItems(Register<Item> event){
             final Item[] items ={
-                new ItemSurvivalToolsAxe(SurvivalGearToolsMaterials.SURVIVAL_TOOL, 2.5f, 7.0f, "tool_survival_axe", "tool_survival_axe")
+                new ItemSurvivalToolsAxe(SurvivalGearToolsMaterials.SURVIVAL_TOOL, 2.5f, 7.0f, "tool_survival_axe")
             };
             
             survivalgeartools.LOGGER.info("Begining Item Register");
