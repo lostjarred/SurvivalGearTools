@@ -25,7 +25,7 @@ public class ModItems {
         @SubscribeEvent
         public static void registerItems(Register<Item> event){
             final Item[] items ={
-                new ItemSurvivalToolsAxe(SurvivalGearToolsMaterials.SURVIVAL_TOOL, "tool_survival_axe"),
+                new ItemSurvivalToolsAxe(SurvivalGearToolsMaterials.SURVIVAL_TOOL, SurvivalGearToolsMaterials.SURVIVAL_TOOL.getAttackDamage(), SurvivalGearToolsMaterials.SURVIVAL_TOOL.getEfficiency(), "tool_survival_axe"),
                 new ItemSurvivalToolsKnife(SurvivalGearToolsMaterials.SURVIVAL_TOOL, "tool_survival_knife"),
                 new ItemSurvivalToolsShovel(SurvivalGearToolsMaterials.SURVIVAL_TOOL, "tool_survival_shovel"),
             };

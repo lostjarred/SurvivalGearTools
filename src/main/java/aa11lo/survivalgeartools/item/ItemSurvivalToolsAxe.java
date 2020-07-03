@@ -5,8 +5,8 @@ import net.minecraft.item.ItemAxe;
 
 public class ItemSurvivalToolsAxe extends ItemAxe {
 
-    public ItemSurvivalToolsAxe(ToolMaterial material, String registryName){
-        super(material, material.getAttackDamage(), material.getEfficiency());
+    public ItemSurvivalToolsAxe(ToolMaterial material, float dammage, float speed, String registryName){
+        super(material, dammage, speed);
 
         setTranslationKey(survivalgeartools.MODID + "." + registryName);
         setRegistryName(registryName);
