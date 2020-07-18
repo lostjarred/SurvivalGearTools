@@ -31,6 +31,7 @@ public class ItemSurvivalToolsShovel extends ItemSpade {
     public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
         ItemStack itemstack = player.getHeldItem(hand);
+        IBlockState iblockstate1 = null;
 
         if (!player.canPlayerEdit(pos.offset(facing), facing, itemstack))
         {
@@ -40,24 +41,23 @@ public class ItemSurvivalToolsShovel extends ItemSpade {
         {
             IBlockState iblockstate = worldIn.getBlockState(pos);
             Block block = iblockstate.getBlock();
+            if (facing != EnumFacing.DOWN && worldIn.getBlockState(pos.up()).getMaterial() == Material.AIR){
+                
+                if (block == Blocks.GRASS){
+                    iblockstate1 = Blocks.GRASS_PATH.getDefaultState();
+                }
 
-            if (facing != EnumFacing.DOWN && worldIn.getBlockState(pos.up()).getMaterial() == Material.AIR && block == Blocks.GRASS)
-            {
-                IBlockState iblockstate1 = Blocks.GRASS_PATH.getDefaultState();
+                if (block == Blocks.GRASS_PATH || block == Blocks.DIRT){
+                    iblockstate1 = Blocks.FARMLAND.getDefaultState();
+                }
+
                 worldIn.playSound(player, pos, SoundEvents.ITEM_SHOVEL_FLATTEN, SoundCategory.BLOCKS, 1.0F, 1.0F);
-
-                if (!worldIn.isRemote)
-                {
+                
+                if (!worldIn.isRemote){
                     worldIn.setBlockState(pos, iblockstate1, 11);
                     itemstack.damageItem(1, player);
                 }
 
-                return EnumActionResult.SUCCESS;
-            }
-            if (facing != EnumFacing.DOWN && worldIn.getBlockState(pos.up()).getMaterial() == Material.AIR && block == Blocks.GRASS_PATH || block == Blocks.DIRT) {
-                if (!worldIn.isRemote){
-                    worldIn.setBlockState(pos, Blocks.FARMLAND.getDefaultState(), 11);
-                }
                 return EnumActionResult.SUCCESS;
             }
             else
